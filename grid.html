@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Collection | Emma Darnell</title>
+</head>
+
+<link rel="stylesheet" href="https://use.typekit.net/gjm6drx.css">
+
+<style>
+body {
+font-family: '', sans-serif;
+background-color: #ffffff;
+padding: 50px;
+color: #444;
+text-align: center;
+}
+
+h1 {
+margin-bottom: 50px;
+color: #d96c9d;
+font-family: "dreaming-outloud-script", cursive;
+font-size: 48px;
+letter-spacing: 0px;
+}
+
+h1 {
+margin-bottom: 60px;
+color: #d96c9d;
+font-family: "dreaming-out-loud-script", cursive;
+font-size: 48px;
+letter-spacing: 0px;
+}
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-auto-rows: 220px;
+gap: 25px;
+max-width: 1000px;
+margin: 0 auto; /* centers the grid */
+}
+
+.gallery img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 16px;
+box-shadow: 0 8px 20px rgba(217,108,157,0.15);
+transition: 0.3s ease;
+}
+
+.gallery img:hover {
+transform: scale(1.03);
+box-shadow: 0 12px 25px rgba(217,108,157,0.25);
+}
+
+/* Balanced asymmetry */
+
+.large {
+grid-column: span 2;
+grid-row: span 2;
+}
+
+.wide {
+grid-column: span 2;
+}
+
+.tall {
+grid-row: span 2;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+.gallery {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 600px) {
+.gallery {
+grid-template-columns: 1fr;
+}
+}
+</style>
+</head>
+
+<body>
+
+<h1>Selected Works</h1>
+
+<div class="gallery">
+
+<!-- Replace these with your own images -->
+
+<img src="project1.jpg" class="large" alt="Project 1">
+<img src="project2.jpg" class="tall" alt="Project 2">
+<img src="project3.jpg" alt="Project 3">
+<img src="project4.jpg" class="wide" alt="Project 4">
+<img src="project5.jpg" alt="Project 5">
+<img src="project6.jpg" alt="Project 6">
+
+</div>
+
+</body>
+</html>
