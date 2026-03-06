@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact | Emma Darnell</title>
+
+<!-- Adobe Font -->
+<link rel="stylesheet" href="https://use.typekit.net/gjm6drx.css">
+
+<style>
+
+body{
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(to bottom right, #ffe6f0, #ffffff);
+padding: 70px 20px;
+text-align:center;
+color:#444;
+}
+
+h1{
+font-family: "dreaming-outloud-script", cursive;
+color:#d96c9d;
+font-size:48px;
+margin-bottom:40px;
+}
+
+/* Form container */
+.form-wrapper{
+background:white;
+max-width:700px;
+margin:auto;
+padding:50px;
+border-radius:24px;
+box-shadow:0 10px 35px rgba(217,108,157,0.15);
+text-align:left;
+}
+
+/* Labels */
+label{
+display:block;
+margin-top:20px;
+font-weight:600;
+}
+
+/* Inputs */
+input, textarea, select{
+width:100%;
+padding:12px;
+margin-top:6px;
+border-radius:10px;
+border:1px solid #ddd;
+font-size:14px;
+}
+
+/* Textarea height */
+textarea{
+height:120px;
+}
+
+/* Radio + checkbox layout */
+.options{
+margin-top:10px;
+}
+
+/* Submit button */
+button{
+margin-top:30px;
+background:#d96c9d;
+color:white;
+border:none;
+padding:14px 28px;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#c45588;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Contact Me</h1>
+
+<div class="form-wrapper">
+
+<form>
+
+<label for="name">Name</label>
+<input type="text" id="name" name="name" placeholder="Your name">
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="your@email.com">
+
+<label for="subject">Subject</label>
+<input type="text" id="subject" name="subject" placeholder="Project inquiry, question, etc.">
+
+<label for="type">What are you contacting me about?</label>
+<select id="type" name="type">
+<option>General Question</option>
+<option>Freelance Design Work</option>
+<option>Collaboration</option>
+<option>Other</option>
+</select>
+
+<label>Project Type</label>
+<div class="options">
+<input type="radio" name="project" value="logo"> Logo Design
+<input type="radio" name="project" value="branding"> Branding
+<input type="radio" name="project" value="illustration"> Illustration
+</div>
+
+<label>Services Interested In</label>
+<div class="options">
+<input type="checkbox" name="service" value="logo"> Logo Design
+<input type="checkbox" name="service" value="packaging"> Packaging Design
+<input type="checkbox" name="service" value="print"> Print Design
+</div>
+
+<label for="comments">Message</label>
+<textarea id="comments" name="comments" placeholder="Write your message here..."></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+</body>
+</html>
