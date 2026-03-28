@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+	
+	
+<link rel="stylesheet" href="https://use.typekit.net/gjm6drx.css">
+
+<style>
+
+body{
+font-family:'Segoe UI', sans-serif;
+background:#ffffff;
+padding:60px 20px;
+color:#444;
+text-align:center;
+}
+
+
+h1{
+font-family:"dreaming-outloud-script", cursive;
+color:#d96c9d;
+font-size:48px;
+margin-bottom:50px;
+}
+
+
+
+.container{
+max-width:1000px; 
+margin:auto;
+}
+
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(2, 1fr);
+gap:30px;
+}
+
+
+.gallery img{
+width:100%;
+max-width:100%;
+height:auto;
+border-radius:16px;
+box-shadow:0 8px 20px rgba(217,108,157,0.15);
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.02);
+}
+
+
+.featured{
+grid-column:span 2;
+}
+
+@media (max-width: 750px){
+
+body{
+padding:40px 15px;
+}
+
+h1{
+font-size:36px;
+}
+
+.gallery{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.featured{
+grid-column:span 1;
+}
+
+.gallery img{
+width:100%;
+}
+
+}
+
+</style>
+
+<body>
+
+<h1>Featured Works</h1>
+
+<div class="container">
+
+<div class="gallery">
+
+<img src="moment billboard.jpg" class="featured" alt="Featured Project">
+<img src="kiyo.jpg" alt="Project 2">
+<img src="moment poster.jpg" alt="Project 3">
+<img src="rescene.png" alt="Project 4">
+<img src="fots.jpg" alt="Project 5">
+
+</div>
+
+</div>
+
+</body>
+</html>
+
