@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animation</title>
+</head>
+
+<link rel="stylesheet" href="https://use.typekit.net/gjm6drx.css">
+
+<style>
+
+body{
+background:#ffffff;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+font-family:'Segoe UI', sans-serif;
+}
+
+
+h1{
+font-family:"dreaming-outloud-script", cursive;
+color:#d96c9d;
+font-size:60px;
+margin-bottom:40px;
+}
+
+
+.object{
+width:120px;
+position:relative;
+animation: floatMove 4s ease-in-out infinite;
+}
+
+
+@keyframes floatMove{
+
+0%{
+transform: translateX(0px) translateY(0px);
+}
+
+25%{
+transform: translateX(40px) translateY(-20px);
+}
+
+50%{
+transform: translateX(0px) translateY(-40px);
+}
+
+75%{
+transform: translateX(-40px) translateY(-20px);
+}
+
+100%{
+transform: translateX(0px) translateY(0px);
+}
+
+}
+
+</style>
+
+<body>
+
+<h1>Emma Darnell</h1>
+
+<img src="star.png" class="object" alt="floating star">
+
+</body>
+</html>
+
