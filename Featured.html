@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Featured Works/Home Page</title>
+</head>
+	
+
+<meta name="description" content="Emma Darnell's graphic design portfolio featuring branding, packaging, editorial design, and creative projects.">
+<meta name="keywords" content="Emma Darnell, graphic design, portfolio, branding, packaging, editorial design, student designer">
+<meta name="author" content="Emma Darnell">
+
+<meta property="og:title" content="Emma Darnell Portfolio">
+<meta property="og:description" content="Explore branding, packaging, and editorial design projects by Emma Darnell.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="featured.jpg">
+
+
+<link rel="stylesheet" href="https://use.typekit.net/gjm6drx.css">
+
+<style>
+body {
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(to bottom right, #ffe6f0, #ffffff);
+padding: 70px 20px;
+color: #444;
+text-align: center;
+}
+
+h1 {
+margin-bottom: 50px;
+color: #d96c9d;
+font-family: "dreaming-outloud-script", cursive;
+font-size: 48px;
+}
+
+.gallery-wrapper {
+background: #ffffff;
+max-width: 1000px;
+margin: 0 auto;
+padding: 60px;
+border-radius: 24px;
+box-shadow: 0 10px 35px rgba(217,108,157,0.15);
+}
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 40px;
+align-items: start;
+}
+
+.gallery img {
+width: 100%;
+height: auto;
+border-radius: 16px;
+box-shadow: 0 6px 18px rgba(217,108,157,0.12);
+transition: 0.3s ease;
+}
+
+.gallery img:hover {
+transform: scale(1.02);
+}
+
+.featured {
+grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+.gallery {
+grid-template-columns: 1fr;
+}
+
+.featured {
+grid-column: span 1;
+}
+
+.gallery-wrapper {
+padding: 30px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<h1>Featured Works</h1>
+
+<div class="gallery-wrapper">
+
+<div class="gallery">
+
+<img src="moment billboard.jpg" class="featured" alt="Featured project Moment Billboard">
+<img src="kiyo.jpg" alt="Kiyo Cafe Menu">
+<img src="moment poster.jpg" alt="Moment Poster Design">
+<img src="rescene.png" alt="Rescene Tour Poster">
+<img src="fots.jpg" alt="FOTS Event Poster">
+	
+</div>
+
+</div>
+
+</body>
+</html>
