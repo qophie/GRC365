@@ -2,27 +2,57 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
-	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Directory</title>
+
+<meta name="description" content="Project directory of Emma Darnell featuring branding, packaging, and editorial design work.">
+<meta name="keywords" content="Emma Darnell, graphic design, branding, packaging, editorial, portfolio, projects">
+<meta name="author" content="Emma Darnell">
+
 <link rel="stylesheet" href="https://use.typekit.net/gjm6drx.css">
 
 <style>
+
 body {
 font-family: 'Segoe UI', sans-serif;
 background-color: #ffffff;
-padding: 50px;
+margin: 0;
+padding: 0;
 color: #444;
+text-align: center;
+}
+
+.navbar{
+text-align:center;
+padding:15px 0;
+background:#fff0f6;
+border-bottom:1px solid #f3c6d9;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.navbar a{
+margin:0 15px;
+color:#d96c9d;
+text-decoration:none;
+font-weight:600;
+font-size:15px;
+transition:0.3s ease;
+}
+
+.navbar a:hover{
+color:#a94d75;
+text-decoration:underline;
 }
 
 h1 {
 text-align: center;
-margin-bottom: 35px;
+margin: 40px 0 35px;
 color: #d96c9d;
 font-family: "dreaming-outloud-script", cursive;
 font-size: 44px;
 }
-
 
 .controls {
 text-align: center;
@@ -45,7 +75,6 @@ transition: 0.3s ease;
 background: #d96c9d;
 color: white;
 }
-
 
 table {
 width: 90%;
@@ -80,7 +109,6 @@ tr:hover {
 background-color: #ffe3f0;
 transition: 0.3s ease;
 }
-
 
 .grid-view {
 display: none;
@@ -123,9 +151,27 @@ table {
 width: 100%;
 }
 }
+
+footer{
+margin-top:60px;
+padding-bottom:20px;
+color:#aaa;
+font-size:14px;
+}
+
 </style>
+</head>
 
 <body>
+
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="gallery.html">Works</a>
+<a href="directory.html">Directory</a>
+<a href="bio.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="resume.html">Resume</a>
+</nav>
 
 <h1>Project Directory</h1>
 
@@ -137,7 +183,6 @@ width: 100%;
 <button onclick="showTable()">Table View</button>
 <button onclick="showGrid()">Grid View</button>
 </div>
-
 
 <table id="tableView">
 <tr>
@@ -173,7 +218,6 @@ width: 100%;
 </tr>
 </table>
 
-
 <div class="grid-view" id="gridView">
 
 <div class="card project branding">
@@ -201,6 +245,8 @@ width: 100%;
 </div>
 
 </div>
+
+<footer>© 2026 Emma Darnell</footer>
 
 <script>
 function filterProjects(category) {

@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Works</title>
+
+<meta name="description" content="Selected graphic design works by Emma Darnell including branding, packaging, and editorial design.">
+<meta name="keywords" content="Emma Darnell, portfolio, graphic design, branding, packaging, editorial">
+<meta name="author" content="Emma Darnell">
+
+<link rel="stylesheet" href="https://use.typekit.net/gjm6drx.css">
+
+<style>
+
+body{
+font-family:'Segoe UI', sans-serif;
+background:#ffffff;
+margin:0;
+padding:0;
+color:#444;
+text-align:center;
+}
+
+.navbar{
+text-align:center;
+padding:15px 0;
+background:#fff0f6;
+border-bottom:1px solid #f3c6d9;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.navbar a{
+margin:0 15px;
+color:#d96c9d;
+text-decoration:none;
+font-weight:600;
+font-size:15px;
+transition:0.3s ease;
+}
+
+.navbar a:hover{
+color:#a94d75;
+text-decoration:underline;
+}
+
+.container{
+padding:50px 20px;
+}
+
+h1{
+font-family:"dreaming-outloud-script", cursive;
+color:#d96c9d;
+font-size:48px;
+margin-bottom:40px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+max-width:900px;
+margin:auto;
+}
+
+.gallery img{
+width:100%;
+border-radius:16px;
+box-shadow:0 6px 18px rgba(217,108,157,0.15);
+transition:0.3s ease;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+.featured{
+grid-column:span 2;
+}
+
+@media (max-width:768px){
+.gallery{
+grid-template-columns:1fr;
+}
+
+.featured{
+grid-column:span 1;
+}
+}
+
+footer{
+margin-top:60px;
+padding-bottom:20px;
+color:#aaa;
+font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="gallery.html">Works</a>
+<a href="directory.html">Directory</a>
+<a href="bio.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="resume.html">Resume</a>
+</nav>
+
+<div class="container">
+
+<h1>Selected Works</h1>
+
+<div class="gallery">
+<img src="images/featured.jpg" class="featured" alt="Featured graphic design project by Emma Darnell">
+<img src="images/elysian.jpg" alt="Elysian branding design project">
+<img src="images/bunbun.jpg" alt="BunBun packaging design project">
+<img src="images/miffy.jpg" alt="Miffy editorial magazine layout design">
+<img src="images/poster.jpg" alt="Typography poster design project">
+</div>
+
+<footer>© 2026 Emma Darnell</footer>
+
+</div>
+
+</body>
+</html>

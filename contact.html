@@ -1,48 +1,77 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Contact | Emma Darnell</title>
 
-<!-- Adobe Font -->
+<meta name="description" content="Contact Emma Darnell for freelance design work, collaborations, or general inquiries.">
+<meta name="keywords" content="Emma Darnell, contact, graphic designer, freelance design, branding, packaging">
+<meta name="author" content="Emma Darnell">
+
 <link rel="stylesheet" href="https://use.typekit.net/gjm6drx.css">
 
 <style>
 
 body{
 font-family: 'Segoe UI', sans-serif;
-background: linear-gradient(to bottom right, #ffe6f0, #ffffff);
-padding: 70px 20px;
+background-color:#ffffff;
+margin:0;
+padding:0;
 text-align:center;
 color:#444;
+}
+
+.navbar{
+text-align:center;
+padding:15px 0;
+background:#fff0f6;
+border-bottom:1px solid #f3c6d9;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.navbar a{
+margin:0 15px;
+color:#d96c9d;
+text-decoration:none;
+font-weight:600;
+font-size:15px;
+transition:0.3s ease;
+}
+
+.navbar a:hover{
+color:#a94d75;
+text-decoration:underline;
 }
 
 h1{
 font-family: "dreaming-outloud-script", cursive;
 color:#d96c9d;
 font-size:48px;
-margin-bottom:40px;
+margin:40px 0;
 }
 
-/* Form container */
 .form-wrapper{
 background:white;
 max-width:700px;
-margin:auto;
+margin:0 auto 60px;
 padding:50px;
 border-radius:24px;
 box-shadow:0 10px 35px rgba(217,108,157,0.15);
 text-align:left;
+border:1px solid #f3c6d9;
 }
 
-/* Labels */
 label{
 display:block;
 margin-top:20px;
 font-weight:600;
+color:#7a2e52;
 }
 
-/* Inputs */
 input, textarea, select{
 width:100%;
 padding:12px;
@@ -50,19 +79,25 @@ margin-top:6px;
 border-radius:10px;
 border:1px solid #ddd;
 font-size:14px;
+font-family: 'Segoe UI', sans-serif;
 }
 
-/* Textarea height */
 textarea{
 height:120px;
+resize:vertical;
 }
 
-/* Radio + checkbox layout */
 .options{
 margin-top:10px;
+font-size:14px;
 }
 
-/* Submit button */
+.options input{
+width:auto;
+margin-right:6px;
+margin-left:10px;
+}
+
 button{
 margin-top:30px;
 background:#d96c9d;
@@ -72,17 +107,35 @@ padding:14px 28px;
 border-radius:30px;
 font-size:16px;
 cursor:pointer;
-transition:.3s;
+transition:.3s ease;
+display:block;
+width:100%;
 }
 
 button:hover{
 background:#c45588;
 }
 
+footer{
+margin-top:40px;
+padding-bottom:20px;
+color:#aaa;
+font-size:14px;
+}
+
 </style>
 </head>
 
 <body>
+
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="gallery.html">Works</a>
+<a href="directory.html">Directory</a>
+<a href="bio.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="resume.html">Resume</a>
+</nav>
 
 <h1>Contact Me</h1>
 
@@ -129,5 +182,8 @@ background:#c45588;
 </form>
 
 </div>
+
+<footer>© 2026 Emma Darnell</footer>
+
 </body>
 </html>

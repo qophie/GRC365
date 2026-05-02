@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emma Darnell Portfolio</title>
+
+<meta name="description" content="Emma Darnell's graphic design portfolio featuring branding, packaging, and editorial design.">
+<meta name="keywords" content="Emma Darnell, graphic design, portfolio, branding, packaging, editorial">
+<meta name="author" content="Emma Darnell">
+
+<link rel="stylesheet" href="https://use.typekit.net/gjm6drx.css">
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI', sans-serif;
+background:linear-gradient(to bottom right, #fff, #ffe6f0);
+color:#444;
+}
+
+.navbar{
+text-align:center;
+padding:20px 0;
+}
+
+.navbar a{
+margin:0 12px;
+text-decoration:none;
+color:#d96c9d;
+font-weight:600;
+}
+
+.hero{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+h1{
+font-family:"dreaming-outloud-script", cursive;
+color:#d96c9d;
+font-size:64px;
+margin-bottom:10px;
+}
+
+.glow{
+position:absolute;
+width:180px;
+height:180px;
+background:radial-gradient(circle, #f8cfe1, transparent 70%);
+filter:blur(20px);
+z-index:-1;
+}
+
+.object{
+width:120px;
+position:relative;
+animation: floatMove 4s ease-in-out infinite;
+}
+
+@keyframes floatMove{
+0%{transform: translateX(0px) translateY(0px);}
+25%{transform: translateX(40px) translateY(-20px);}
+50%{transform: translateX(0px) translateY(-40px);}
+75%{transform: translateX(-40px) translateY(-20px);}
+100%{transform: translateX(0px) translateY(0px);}
+}
+
+.hero{
+animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:#aaa;
+font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="gallery.html">Works</a>
+<a href="directory.html">Directory</a>
+<a href="bio.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="resume.html">Resume</a>
+</nav>
+
+<div class="hero">
+
+<h1>Emma Darnell</h1>
+
+<div class="glow"></div>
+<img src="star.png" class="object" alt="floating star graphic">
+
+</div>
+
+<footer>© 2026 Emma Darnell</footer>
+
+</body>
+</html>
